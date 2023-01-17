@@ -26,5 +26,17 @@ void main() {
   
    //inorder to print the words with spaces we use the process called String interpullation
    String newStringPro = "$myString $yourString";
-   print(newStringPro);  
+   print(newStringPro); //this not only merges string but also integers.
+
+   //converting string into different data types
+   String foodPrices = "50";
+   String foodPricesdouble = "50.5";
+
+   int convertedintfoodPrice = int.parse(foodPrices);
+   double converteddoublefoodPrice = double.parse(foodPricesdouble);
+   
+   //forloop prints one by one in next lines
+   for(int i = 0; i < 5; i++) {
+    print(i);
+   }
 }
