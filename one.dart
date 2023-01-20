@@ -39,4 +39,15 @@ void main() {
    for(int i = 0; i < 5; i++) {
     print(i);
    }
+
+   //function to append first and last name
+   String makeFullName(String firstName, String lastName) {
+    return "$firstName $lastName";
+   }
+
+   //the same thing can be written with arrow operator
+   String makefullName(String firstName, String lastName) =>"$firstName $lastName";
+   
+   //for giving any default value and calling that in main function and if no value is given in that case you can do so
+   String MakeFullName({String? firstName, String? lastName = "Chef"}) =>"$firstName $lastName"; //in this funtion curly braces are being used and while calling the function in the main, it happens to give default value as chef in lastname if something by itself is not given.
 }
