@@ -10,4 +10,6 @@ void main() {
   output.forEach((e) => print(
     "${e[0]} is of ${e[1]} and the discounted amount is ${double.parse(e[1])*0.8}"
   ));
+
+  //[0] is because we are getting the word before "|", and [1] is for words after "|". 
 }
